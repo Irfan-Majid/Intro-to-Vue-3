@@ -19,6 +19,10 @@
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <p v-if="onSale">Available</p>
+            <p v-else-if="onSale">Not Available</p>
+            <p v-else="onSale">Not Available</p>
+            <p v-show="onSale">Dip Dip</p>
           </div>
         </div>
       </div>
